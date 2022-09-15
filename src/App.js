@@ -32,12 +32,6 @@ function App() {
       setToggleUsers(users);
   }
 
-  const handleChild=()=>{
-    users.map((ele)=>{
-      ele.name = "Update to Child Name"
-    })
-    setUsers(users)
-  }
 
    return <>
     <div className="container mt-5">
@@ -57,7 +51,7 @@ function App() {
      <Users users={currentUsers} loading={loading} query={inputValue} />
      <div >
      <Pagination style={{display:"inline-block",float:"left"}}  usersPerPage={usersPerPage} totalUsers={users.length} paginate={paginate} />
-     <button className='btn btn-primary'  style={{float:"right",display:"inline-block"}} >updateParentName</button>
+    
      </div>
     </div>
  
